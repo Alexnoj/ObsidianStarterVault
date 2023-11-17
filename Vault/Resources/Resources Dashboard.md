@@ -49,6 +49,14 @@ if(filteredPages.values.length > 0){
 ```
 # Resources
 Collection of Resources.
+
+```button
+name + Add Resource
+type note(Resources/untitled) template
+action resources/Resource
+class tailwind-button-white
+```
+
 ```dataviewjs
 for (let group of dv.pages('"Resources" and !#dashboard').groupBy(p => p.file.folder)) {
   let headerLevel = group.key.split("/").length
